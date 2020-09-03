@@ -6,8 +6,9 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter curtana excalibur gram joyeuse miatoll,$(TARGET_DEVICE)),)
+ifeq ($(TARGET_DEVICE),miatoll)
 include $(call all-makefiles-under,$(LOCAL_PATH))
+endif
 
 include $(CLEAR_VARS)
 

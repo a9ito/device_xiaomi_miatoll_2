@@ -7,6 +7,10 @@
 
 set -e
 
+# Required!
+export DEVICE=miatoll
+export VENDOR=xiaomi
+
 INITIAL_COPYRIGHT_YEAR=2020
 
 # Load extract_utils and do some sanity checks
